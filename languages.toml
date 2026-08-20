@@ -16,6 +16,9 @@ command = "hx-lsp"
 markdown = false
 documentColor = true
 
+[language-server.typos]
+command = "typos-lsp"
+config.DiagnosticSeverity = "Info"
 
 # Cargo.toml LSP
 [language-server.crates-lsp]
@@ -59,3 +62,10 @@ injection-regex = "astro"
 file-types = ["astro"]
 roots = ["package.json", "astro.config.mjs"]
 language-servers = ["astro-language-server"]
+
+[[language]]
+name = "rust"
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.rust-analyzer.config]
+diagnostics.experimental.enable = false
