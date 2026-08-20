@@ -39,7 +39,7 @@ character   = "▏"
 skip-levels = 1
 
 [editor.gutters]
-layout                 = ["diff", "diagnostics", "line-numbers", "spacer"]
+layout                 = ["diff", "diagnostics", "spacer", "line-numbers", "spacer"]
 line-numbers.min-width = 1
 
 [editor.soft-wrap]
@@ -83,5 +83,3 @@ C-S-t = ":vsplit-new"                         # Open a new vertical split
 # # Space menu
 # [keys.normal.space]
 # O = ":trail-open" # Open recent projects
-
-
